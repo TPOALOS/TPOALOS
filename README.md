@@ -24,6 +24,16 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 
 ## The small tools people actually use
 
+### AI assistants and agents
+
+| Tool | The question it answers |
+|---|---|
+| [**cmdguard**](https://github.com/TPOALOS/cmdguard) | Will this command my AI agent wants to run wreck my machine? (allow, ask or deny; works as a Claude Code hook) |
+| [**mcpaudit**](https://github.com/TPOALOS/mcpaudit) | Is my MCP server configuration safe? (secrets, unpinned downloads, over-broad access) |
+| [**injectscan**](https://github.com/TPOALOS/injectscan) | Is there a hidden instruction in this page or file? (invisible Unicode, hidden HTML, decoded for you) |
+| [**ctxpack**](https://github.com/TPOALOS/ctxpack) | How do I give an AI my whole project without leaking my secrets? |
+| [**tokcount**](https://github.com/TPOALOS/tokcount) | How many tokens is this, will it fit, and what will it cost? |
+
 ### Things that quietly break, until they cost you
 
 | Tool | The question it answers |
@@ -83,7 +93,7 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 - **Read-only by default.** The tools report; when one can change something (`--strip`, `--scrub`, `--append`) it previews
   first, keeps a backup or writes a copy, and never deletes on its own.
 - **Honest about limits.** These are checks, not oracles: a clean result means "nothing found", never "proven safe", and the tools say so.
-- **Tested like it matters.** More than 1,800 tests across the repos, including hostile inputs (paths with `$(...)`, newlines in
+- **Tested like it matters.** More than 2,000 tests across the repos, including hostile inputs (paths with `$(...)`, newlines in
   file names, symlinks that point outside the folder, truncated archives). The maintained tools run CI on Linux and macOS with actions pinned
   to commit SHAs.
 - **Private by construction.** No network access, no telemetry, no accounts. Tools that must look at a network (`certwatch`,

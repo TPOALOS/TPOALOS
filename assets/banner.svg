@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="t d">
   <title id="t">TPOALOS</title>
-  <desc id="d">Small, sharp command-line tools. Pure Python, zero dependencies. 38 tools, over 1,800 tests, MIT licensed.</desc>
+  <desc id="d">Small, sharp command-line tools. Pure Python, zero dependencies. 43 tools, over 2,000 tests, MIT licensed.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1220"/>
@@ -17,9 +17,9 @@
   <text x="78" y="156" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#cbd5e1">Small, sharp command-line tools. Pure Python, zero dependencies.</text>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#e2e8f0">
     <rect x="76" y="190" width="150" height="40" rx="20" fill="#ffffff" fill-opacity="0.08" stroke="#5eead4" stroke-opacity="0.55"/>
-    <text x="151" y="217" text-anchor="middle">38 tools</text>
+    <text x="151" y="217" text-anchor="middle">43 tools</text>
     <rect x="242" y="190" width="200" height="40" rx="20" fill="#ffffff" fill-opacity="0.08" stroke="#5eead4" stroke-opacity="0.55"/>
-    <text x="342" y="217" text-anchor="middle">1,800+ tests</text>
+    <text x="342" y="217" text-anchor="middle">2,000+ tests</text>
     <rect x="458" y="190" width="214" height="40" rx="20" fill="#ffffff" fill-opacity="0.08" stroke="#5eead4" stroke-opacity="0.55"/>
     <text x="565" y="217" text-anchor="middle">0 dependencies</text>
     <rect x="688" y="190" width="118" height="40" rx="20" fill="#ffffff" fill-opacity="0.08" stroke="#5eead4" stroke-opacity="0.55"/>
