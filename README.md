@@ -72,6 +72,15 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 | [**headercheck**](https://github.com/TPOALOS/headercheck) | How good are my site's security headers? |
 | [**jwtlint**](https://github.com/TPOALOS/jwtlint) | What is wrong with this JWT? |
 | [**mailtriage**](https://github.com/TPOALOS/mailtriage) · [**urlcheck**](https://github.com/TPOALOS/urlcheck) | Is this e-mail or link a phishing attempt? (offline, never opened) |
+| [**pathaudit**](https://github.com/TPOALOS/pathaudit) · [**symlinkcheck**](https://github.com/TPOALOS/symlinkcheck) · [**sudoers-audit**](https://github.com/TPOALOS/sudoers-audit) | Can someone hijack my PATH, my symlinks or my sudo rules? |
+
+### Web servers, e-mail and untrusted files
+
+| Tool | The question it answers |
+|---|---|
+| [**nginxcheck**](https://github.com/TPOALOS/nginxcheck) · [**cookiecheck**](https://github.com/TPOALOS/cookiecheck) | Is my nginx config or my Set-Cookie header weak? |
+| [**mailauth-lint**](https://github.com/TPOALOS/mailauth-lint) · [**dmarc-report**](https://github.com/TPOALOS/dmarc-report) | Are my SPF, DKIM and DMARC records right, and who is failing them? |
+| [**zipcheck**](https://github.com/TPOALOS/zipcheck) · [**csvguard**](https://github.com/TPOALOS/csvguard) · [**trojansrc**](https://github.com/TPOALOS/trojansrc) | Is this archive, spreadsheet or source file hostile? |
 
 ### Developer hygiene
 
