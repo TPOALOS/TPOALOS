@@ -19,6 +19,7 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 | | Tool | What it does |
 |---|---|---|
 | 🛡️ | [**hostguard**](https://github.com/TPOALOS/hostguard) | Read-only hardening audit for Linux and macOS: 76 checks, a score, an HTML report and drift detection |
+| 🎯 | [**detectlite**](https://github.com/TPOALOS/detectlite) | Detection engineering: a Sigma-compatible rule engine for local logs with 42 tested rules mapped to MITRE ATT&CK |
 | 🔎 | [**portlens**](https://github.com/TPOALOS/portlens) | Defensive attack-surface scanner (nmap-style) with a scope guard and rate caps: it refuses to scan what you do not own |
 | 📦 | [**pcaplens**](https://github.com/TPOALOS/pcaplens) | pcap/pcapng analyzer: TCP reassembly, scan, beacon and DNS-tunnel detectors, CTF stream tools |
 | 🏁 | [**ctfhost**](https://github.com/TPOALOS/ctfhost) | Host your own CTF: scrypt logins, CSRF protection, dynamic scoring, first blood, a scoreboard |
