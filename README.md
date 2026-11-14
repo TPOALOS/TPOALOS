@@ -59,6 +59,7 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 | [**shellhist-scrub**](https://github.com/TPOALOS/shellhist-scrub) | Which passwords did I type into my shell history? |
 | [**envdrift**](https://github.com/TPOALOS/envdrift) | Does my `.env` match `.env.example`, and did I leave a placeholder secret? |
 | [**pwlint**](https://github.com/TPOALOS/pwlint) | How weak is this password, really? (it is never printed or sent) |
+| [**pwned-local**](https://github.com/TPOALOS/pwned-local) · [**pwhash-audit**](https://github.com/TPOALOS/pwhash-audit) | Is this password in a breach list (offline)? Does my shadow or htpasswd file hold weak hashes? |
 
 ### Security checks for your own systems
 
@@ -73,6 +74,7 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 | [**jwtlint**](https://github.com/TPOALOS/jwtlint) | What is wrong with this JWT? |
 | [**mailtriage**](https://github.com/TPOALOS/mailtriage) · [**urlcheck**](https://github.com/TPOALOS/urlcheck) | Is this e-mail or link a phishing attempt? (offline, never opened) |
 | [**pathaudit**](https://github.com/TPOALOS/pathaudit) · [**symlinkcheck**](https://github.com/TPOALOS/symlinkcheck) · [**sudoers-audit**](https://github.com/TPOALOS/sudoers-audit) | Can someone hijack my PATH, my symlinks or my sudo rules? |
+| [**elfcheck**](https://github.com/TPOALOS/elfcheck) · [**iocgrep**](https://github.com/TPOALOS/iocgrep) | Is this binary hardened (PIE, NX, RELRO)? Do these logs contain known indicators of compromise? |
 
 ### Web servers, e-mail and untrusted files
 
@@ -90,6 +92,14 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 | [**gha-audit**](https://github.com/TPOALOS/gha-audit) | Is my GitHub Actions workflow safe? |
 | [**dockerfile-audit**](https://github.com/TPOALOS/dockerfile-audit) | Is my Dockerfile safe? |
 | [**reqpin**](https://github.com/TPOALOS/reqpin) | Are my pip requirements pinned, hashed and free of typosquats? |
+| [**npmscan**](https://github.com/TPOALOS/npmscan) · [**signcheck**](https://github.com/TPOALOS/signcheck) | Does my npm project run install scripts or pull odd dependencies? Are my commits signed? |
+
+### Cloud, APIs and DNS
+
+| Tool | The question it answers |
+|---|---|
+| [**planguard**](https://github.com/TPOALOS/planguard) · [**iamlint**](https://github.com/TPOALOS/iamlint) | What will this Terraform plan destroy or expose? Is this IAM policy too broad? |
+| [**apispec-lint**](https://github.com/TPOALOS/apispec-lint) · [**zonelint**](https://github.com/TPOALOS/zonelint) | Is my OpenAPI spec or DNS zone file weak? |
 
 ### Finance
 
