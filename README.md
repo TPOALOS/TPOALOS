@@ -108,6 +108,9 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 |---|---|
 | [**backtestlint**](https://github.com/TPOALOS/backtestlint) | Does my backtest peek into the future? (look-ahead and leakage lint) |
 | [**riskmetrics**](https://github.com/TPOALOS/riskmetrics) | Is this Sharpe ratio real, or the luckiest of many tries? (deflated Sharpe, drawdowns) |
+| [**edgelab**](https://github.com/TPOALOS/edgelab) | Is this trading edge real? A trial ledger counts every variant, then checks the holdout and the cost |
+| [**costmap**](https://github.com/TPOALOS/costmap) | Where does my strategy die? Net Sharpe by transaction cost and volatility regime, with no look-ahead labels |
+| [**strategy-graveyard**](https://github.com/TPOALOS/strategy-graveyard) | What does luck look like? Classic rules on no-edge random markets, and does my price history beat them? |
 
 ## How I build them
 
