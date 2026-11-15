@@ -25,6 +25,22 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 | 🏁 | [**ctfhost**](https://github.com/TPOALOS/ctfhost) | Host your own CTF: scrypt logins, CSRF protection, dynamic scoring, first blood, a scoreboard |
 | 💰 | [**pocketledger**](https://github.com/TPOALOS/pocketledger) | Private, local personal finance: bank CSV import, budgets, subscription detection, net worth, an HTML report |
 
+## Quant research toolkit
+
+Five finance tools that fit together as one workflow for testing a trading idea honestly. All are offline, dependency-free and read your CSVs:
+
+```text
+backtestlint  ->  edgelab  ->  riskmetrics  ->  costmap  ->  strategy-graveyard
+ is the code      is the edge    is the Sharpe    where does     what would luck
+ leak-free?       real?          real?            it die?        have done?
+```
+
+1. [**backtestlint**](https://github.com/TPOALOS/backtestlint): lint the backtest code for look-ahead and leakage before you trust any number.
+2. [**edgelab**](https://github.com/TPOALOS/edgelab): log every variant you try, then check the holdout, the trial count and the cost.
+3. [**riskmetrics**](https://github.com/TPOALOS/riskmetrics): confidence intervals and a deflated Sharpe for the winner.
+4. [**costmap**](https://github.com/TPOALOS/costmap): net Sharpe across costs and volatility regimes, to see where the edge dies.
+5. [**strategy-graveyard**](https://github.com/TPOALOS/strategy-graveyard): run the classic rules on no-edge random markets to see how good luck can look.
+
 ## The small tools people actually use
 
 ### AI assistants and agents
