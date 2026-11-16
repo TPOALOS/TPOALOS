@@ -27,19 +27,24 @@ pip install git+https://github.com/TPOALOS/<tool>        # any tool below
 
 ## Quant research toolkit
 
-Five finance tools that fit together as one workflow for testing a trading idea honestly. All are offline, dependency-free and read your CSVs:
+Eight finance tools that fit together as one workflow for testing a trading idea honestly. All are offline, dependency-free and read your CSVs:
 
 ```text
-backtestlint  ->  edgelab  ->  riskmetrics  ->  costmap  ->  strategy-graveyard
- is the code      is the edge    is the Sharpe    where does     what would luck
- leak-free?       real?          real?            it die?        have done?
+ohlcvlint  ->  backtestlint  ->  edgelab  ->  riskmetrics  ->  costmap  ->  slipcheck  ->  ruinsim
+is the data    is the code       is the edge  is the Sharpe    where does    what did       how big can
+sane?          leak-free?        real?        real?            it die?       costs be?      I trade?
+
+strategy-graveyard: what would pure luck have done on the same numbers?
 ```
 
-1. [**backtestlint**](https://github.com/TPOALOS/backtestlint): lint the backtest code for look-ahead and leakage before you trust any number.
-2. [**edgelab**](https://github.com/TPOALOS/edgelab): log every variant you try, then check the holdout, the trial count and the cost.
-3. [**riskmetrics**](https://github.com/TPOALOS/riskmetrics): confidence intervals and a deflated Sharpe for the winner.
-4. [**costmap**](https://github.com/TPOALOS/costmap): net Sharpe across costs and volatility regimes, to see where the edge dies.
-5. [**strategy-graveyard**](https://github.com/TPOALOS/strategy-graveyard): run the classic rules on no-edge random markets to see how good luck can look.
+1. [**ohlcvlint**](https://github.com/TPOALOS/ohlcvlint): check the price data for bad bars, gaps and unadjusted splits before anything else.
+2. [**backtestlint**](https://github.com/TPOALOS/backtestlint): lint the backtest code for look-ahead and leakage before you trust any number.
+3. [**edgelab**](https://github.com/TPOALOS/edgelab): log every variant you try, then check the holdout, the trial count and the cost.
+4. [**riskmetrics**](https://github.com/TPOALOS/riskmetrics): confidence intervals and a deflated Sharpe for the winner.
+5. [**costmap**](https://github.com/TPOALOS/costmap): net Sharpe across costs and volatility regimes, to see where the edge dies.
+6. [**slipcheck**](https://github.com/TPOALOS/slipcheck): measure what your fills really cost and compare it with the cost you assumed.
+7. [**ruinsim**](https://github.com/TPOALOS/ruinsim): bootstrap your trades to size positions against drawdown and ruin.
+8. [**strategy-graveyard**](https://github.com/TPOALOS/strategy-graveyard): run the classic rules on no-edge random markets to see how good luck can look.
 
 ## The small tools people actually use
 
@@ -127,6 +132,9 @@ backtestlint  ->  edgelab  ->  riskmetrics  ->  costmap  ->  strategy-graveyard
 | [**edgelab**](https://github.com/TPOALOS/edgelab) | Is this trading edge real? A trial ledger counts every variant, then checks the holdout and the cost |
 | [**costmap**](https://github.com/TPOALOS/costmap) | Where does my strategy die? Net Sharpe by transaction cost and volatility regime, with no look-ahead labels |
 | [**strategy-graveyard**](https://github.com/TPOALOS/strategy-graveyard) | What does luck look like? Classic rules on no-edge random markets, and does my price history beat them? |
+| [**ohlcvlint**](https://github.com/TPOALOS/ohlcvlint) | Is my price data sane? Bad bars, gaps, unadjusted splits, spikes and stale prices, found before they fake a backtest |
+| [**slipcheck**](https://github.com/TPOALOS/slipcheck) | Did my backtest assume the cost I actually paid? Real slippage and fees from my fills, with an interval |
+| [**ruinsim**](https://github.com/TPOALOS/ruinsim) | How big can I trade before the drawdown kills me? Bootstrapped drawdown and ruin risk by position size |
 
 ## How I build them
 
